@@ -5,10 +5,12 @@ Este script permite autenticar na plataforma **Bright**, escolher um projeto par
 
 ---
 
-### 🛠 **Pré-requisitos**  
+### **Pré-requisitos**  
 - Python 3.8+ instalado  
 - **pip** atualizado  
 - Instalar as dependências necessárias  
+
+---
 
 ### **Instalação e Configuração**  
 
