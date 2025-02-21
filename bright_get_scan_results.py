@@ -8,8 +8,17 @@ from dotenv import load_dotenv
 # Carregar variáveis do .env
 load_dotenv()
 
-# Configuração básica de logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configuração do log
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+file_handler = logging.FileHandler('bright_get_scan_results.log', mode='w')
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logger.addHandler(file_handler)
+
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logger.addHandler(console_handler)
 
 # Classe responsável por autenticação e comunicação com a API da Bright
 class BrightAPI:

@@ -42,6 +42,7 @@ Este script permite autenticar na plataforma **Bright**, escolher um projeto par
 Após a execução, serão gerados os seguintes arquivos na raiz do projeto:  
 - `vulnerabilidades_<nome_do_projeto>.json`  
 - `vulnerabilidades_<nome_do_projeto>.csv`  
+- `bright_get_scan_results.log`
 
 ---
 
