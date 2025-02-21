@@ -32,7 +32,7 @@ Este script permite autenticar na plataforma **Bright**, escolher um projeto par
 1. Certifique-se de que o `.env` está configurado corretamente.  
 2. Execute o script com o seguinte comando:  
    ```bash
-   python brightsec_script.py
+   python bright_get_scan_results.py
    ```  
 3. Insira o nome do projeto quando solicitado.  
 
